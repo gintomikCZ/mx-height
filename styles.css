@@ -1,0 +1,21 @@
+.header {
+  padding: 20px;
+  background: #efefef;
+  cursor: pointer;
+}
+
+
+.container {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 1s;
+}
+
+.container div {
+  overflow: hidden;
+}
+
+.header:hover ~ .container {
+  grid-template-rows: 1fr;
+
+}
